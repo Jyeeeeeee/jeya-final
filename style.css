@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Jeya-test';
+    src: url(./fonts/jeya_test-Regular.woff2) format('woff2'),
+         url(./fonts/jeya_test-Regular.woff) format('woff'),
+         url(./fonts/jeya_test-Regular.otf) format('otf');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Jeya-test', sans-serif;
+    font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* **************************** */
+
+#btn_print {
+    position: absolute;
+    right: 24px;
+    top: 35px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#btn_print > img {
+    width: 48px;
+    height: 48px;
+}
+
+#btn_print:hover {
+    opacity: 0.4;
+}
+
+.mainWrapper {
+    width: calc(100vw - 32px);
+    height: 97vh;
+    padding: 12px 24px;
+}
+
+textarea {
+    width: calc(100% - 84px);
+    height: 100%;
+    border: none;
+    resize: none;
+    padding: 0px;
+    background: none;
+
+    font-family: 'Jeya-test';
+    font-size: 6vw;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::selection {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    width: calc(100vw - 32px);
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 16px 16px 16px;
+
+    overflow: hidden;
+
+    border-top: 2px solid black;
+}
+
+footer > #roll {
+    white-space: nowrap;
+    font-size: 2rem;
+}
+
+#roll > span {
+    color: black;
+    text-decoration: none;
+
+    padding: 0px 10vw;
+    position: relative;
+    
+    left: 0px;
+}
+
+a {
+    color: black;
+}
+
+.hide {
+    display: none;
+}
